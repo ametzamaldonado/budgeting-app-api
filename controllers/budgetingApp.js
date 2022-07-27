@@ -27,7 +27,7 @@ transactions.post("/", (req, res) => {
 // Delete 
 transactions.delete("/:arrayId", (req, res) => {
     const { arrayId } = req.params;
-    if(transactionData[id]){
+    if(transactionData[arrayId]){
         const deletedEntry = transactionData.splice(arrayId, 1)
         res.status(200).json(deletedEntry)
     }
