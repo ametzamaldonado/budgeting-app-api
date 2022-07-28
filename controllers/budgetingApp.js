@@ -36,7 +36,7 @@ transactions.delete("/:arrayId", (req, res) => {
 // Update
 transactions.put("/:arrayId", (req, res) => {
     const { arrayId } = req.params;
-    if(transactionData[id]){
+    if(transactionData[arrayId]){
         transactionData[arrayId] = req.body
         res.status(200).json(transactionData[arrayId])
     }
