@@ -1,1 +1,1 @@
-# bugeting-app-api
+# budgeting-app-api
